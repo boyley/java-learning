@@ -38,7 +38,7 @@ flowchart TD
     A[put key,value] --> B{table 为空?}
     B -->|是| C[resize 初始化]
     B -->|否| D
-    C --> D[计算 hash 与下标 i = n-1 & hash]
+    C --> D["计算 hash 与下标 i = n-1 & hash"]
     D --> E{桶 i 为空?}
     E -->|是| F[直接放入新 Node]
     E -->|否| G{首节点 key 相同?}
